@@ -9,7 +9,7 @@ const passport = require('passport')
 //initialize middlewares
 app.use(express.json())
 
-// app.use(cookieParser())
+ 
 app.use(cors())
 app.use(passport.initialize())
 app.use(cookieParser())
