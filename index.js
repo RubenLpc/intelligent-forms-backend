@@ -8,8 +8,6 @@ const passport = require('passport')
 
 //initialize middlewares
 app.use(express.json())
-
- 
 app.use(cors())
 app.use(passport.initialize())
 app.use(cookieParser())
@@ -22,12 +20,8 @@ const authRoutes = require('./routes')
 //initialize routesn
 app.use('/api', authRoutes)
 
-app.listen(3000,() => {
-    console.log('Server listening on port 3000');
+app.listen(8030,() => {
+    console.log('Server listening on port 8080');
 
     
 });
-
-
-
-
